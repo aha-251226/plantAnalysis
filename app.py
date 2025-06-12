@@ -71,9 +71,7 @@ with st.sidebar:
         pdf_bytes = uploaded_pdf.read()
         
         # PDF 미리보기
-        base64_pdf = base64.b64encode(pdf_bytes).decode('utf-8')
-        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="300"></iframe>'
-        st.markdown(pdf_display, unsafe_allow_html=True)
+        st.info("PDF 파일이 업로드되었습니다.")
 
 # 메인 화면
 data = load_json_data()
