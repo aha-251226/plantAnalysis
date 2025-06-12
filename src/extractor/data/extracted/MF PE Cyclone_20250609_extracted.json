@@ -1,0 +1,44 @@
+{
+  "tag_number": "32-C-2222",
+  "service": "Flash Gas Cyclone",
+  "equipment_type": "cyclone",
+  "manufacturer": "Fisher-Klosterman",
+  "model": "11",
+  "flow_rate": 671.0,
+  "flow_unit": "kg/hr",
+  "temperature": 82.2,
+  "pressure": 10.2,
+  "density": 24.63,
+  "design_pressure": 24.6,
+  "design_temperature": 140.0,
+  "material": "CS",
+  "nozzles": [
+    {
+      "tag": "412",
+      "service": "Gas Inlet",
+      "size": "14\"",
+      "rating": "300#",
+      "facing": "RF"
+    },
+    {
+      "tag": "413",
+      "service": "Gas Outlet",
+      "size": "14\"",
+      "rating": "300#",
+      "facing": "RF"
+    },
+    {
+      "service": "Solids Solids Outlet to Purge Column",
+      "size": "6\"",
+      "rating": "300#",
+      "facing": "RF"
+    }
+  ],
+  "efficiency": 99.2,
+  "pressure_drop": 0.357,
+  "inlet_velocity": 20.0,
+  "dimensions": {
+    "inlet_height_mm": 279,
+    "inlet_width_mm": 140
+  }
+}

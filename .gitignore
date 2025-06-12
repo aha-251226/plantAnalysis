@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# 로그
+logs/
+*.log
+
+# 임시 파일
+output/temp/
+*.tmp
+
+# 대용량 파일
+*.pdf
+*.fbx
+*.obj
+*.step
+
+# Unity
+UnityProject/Plant3DViewer/Library/
+UnityProject/Plant3DViewer/Temp/
+UnityProject/Plant3DViewer/Logs/
+UnityProject/Plant3DViewer/Build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

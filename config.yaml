@@ -1,0 +1,69 @@
+# Plant3D 프로젝트 설정 파일
+# 경로: E:\github\plant3D\config.yaml
+
+# 프로그램 경로 설정
+programs:
+  freecad:
+    windows: "C:/Program Files/FreeCAD 0.21/bin/FreeCADCmd.exe"
+    linux: "/usr/bin/freecadcmd"
+  unity:
+    windows: "C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Unity.exe"
+    linux: "/opt/Unity/Editor/Unity"
+  
+# 프로젝트 경로 설정  
+paths:
+  project_root: "E:/github/plant3D"
+  data:
+    input: "data/input"
+    extracted: "data/extracted"
+    templates: "data/templates"
+  output:
+    models: "output/models"
+    reports: "output/reports"
+    temp: "output/temp"
+  unity_project: "UnityProject/Plant3DViewer"
+
+# 처리 설정
+processing:
+  # 타임아웃 설정 (초)
+  freecad_timeout: 120
+  unity_timeout: 300
+  
+  # 파일 형식
+  export_formats:
+    - "obj"
+    - "fbx"
+    - "step"
+  
+  # 모델 품질 설정
+  mesh_quality:
+    low: 1000      # 폴리곤 수
+    medium: 5000
+    high: 20000
+
+# 웹 서버 설정
+webserver:
+  host: "127.0.0.1"
+  port: 8080
+  debug: true
+  upload_folder: "data/input"
+  max_file_size: 104857600  # 100MB
+
+# 장비 템플릿 설정
+equipment_templates:
+  cyclone:
+    default_efficiency: 0.99
+    inlet_velocity_range: [15, 25]  # m/s
+    pressure_drop_factor: 0.02
+  pump:
+    default_efficiency: 0.85
+    npshr_margin: 1.2
+  vessel:
+    default_orientation: "vertical"
+    standard: "ASME VIII"
+
+# 로깅 설정
+logging:
+  level: "INFO"
+  file: "logs/plant3d.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
